@@ -1,3 +1,9 @@
 node_modules
 build
 jest/coverage
+
+.DS_Store
+
+yarn-debug.log*
+yarn-error.log*
+
