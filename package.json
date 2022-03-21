@@ -8,7 +8,8 @@
     "start": "webpack serve --config webpack/webpack.dev.config.ts",
     "build": "webpack --config webpack/webpack.prod.config.ts",
     "test": "jest --config jest/jest.config.ts --watchAll",
-    "lint": "eslint src/* --debug --fix"
+    "lint": "eslint src/*",
+    "prettier": "prettier --check"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -55,7 +56,8 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
-      "eslint",
+      "yarn pretter:check",
+      "yarn lint",
       "git add"
     ]
   }
