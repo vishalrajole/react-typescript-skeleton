@@ -3,7 +3,7 @@ import { App } from "./App";
 
 describe("App Component", function () {
   it("should have hello world message", function () {
-    let { getByText } = render(<App />);
+    const { getByText } = render(<App />);
 
     expect(getByText("Hello React typescript!")).toMatchInlineSnapshot(`
       <h1>
