@@ -51,7 +51,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn pretter:check",
+      "yarn prettier",
       "yarn lint"
     ]
   }
