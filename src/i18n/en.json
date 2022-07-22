@@ -1,0 +1,3 @@
+{
+  "myMessage": "Hello {ts, date, ::yyyyMMdd}"
+}
